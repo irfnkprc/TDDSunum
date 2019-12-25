@@ -1,6 +1,0 @@
-C:\Users\irfan.koprucu\source\repos\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.dll
-C:\Users\irfan.koprucu\source\repos\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.pdb
-C:\Users\irfan.koprucu\source\repos\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CoreCompileInputs.cache
-C:\Users\irfan.koprucu\source\repos\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
-C:\Users\irfan.koprucu\source\repos\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
-C:\Users\irfan.koprucu\source\repos\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojAssemblyReference.cache
