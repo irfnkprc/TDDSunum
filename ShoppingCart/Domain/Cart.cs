@@ -49,7 +49,7 @@ namespace ShoppingCart.Domain
 
     public void ApplyCoupon(Coupon coupon)
     {
-      if (coupon.MinimumCartAmount < TotalAmountAfterDiscounts)
+      if (coupon.MinimumAmount < TotalAmountAfterDiscounts)
       {
         return;
       }

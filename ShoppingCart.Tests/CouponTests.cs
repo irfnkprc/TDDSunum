@@ -6,13 +6,13 @@ using ShoppingCart.Tests.TestHelpers;
 namespace ShoppingCart.Tests
 {
     /*
-Coupons exist for cart discounts.
-If Cart amount is less than minimum, discount is not applied.
+        Coupons exist for cart discounts.
+        If Cart amount is less than minimum, discount is not applied.
      */
 
     public class CouponTests
     {
-        [TestCase("MinimumCartAmount")]
+        [TestCase("MinimumAmount")]
         public void It_should_have_Property_with_given_name(string propertyName)
         {
             //Arrange
@@ -35,7 +35,7 @@ If Cart amount is less than minimum, discount is not applied.
             var coupon = Coupon.RateCoupon(minimumCartAmount, rateOfDiscount);
 
             //Verify
-            coupon.MinimumCartAmount.Should().Be(minimumCartAmount);
+            coupon.MinimumAmount.Should().Be(minimumCartAmount);
             coupon.Rate.Should().Be(rateOfDiscount);
             coupon.DiscountType.Should().Be(discountType);
         }
@@ -52,7 +52,7 @@ If Cart amount is less than minimum, discount is not applied.
             var coupon = Coupon.AmountCoupon(minimumCartAmount, amountOfDiscount);
 
             //Verify
-            coupon.MinimumCartAmount.Should().Be(minimumCartAmount);
+            coupon.MinimumAmount.Should().Be(minimumCartAmount);
             coupon.AmountOfDiscount.Should().Be(amountOfDiscount);
             coupon.DiscountType.Should().Be(discountType);
         }

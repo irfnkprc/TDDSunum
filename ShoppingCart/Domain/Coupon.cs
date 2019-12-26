@@ -1,8 +1,9 @@
-﻿namespace ShoppingCart.Domain
+﻿using ShoppingCart.abstractions;
+
+namespace ShoppingCart.Domain
 {
-    public class Coupon
+    public class Coupon : BaseBenefit
     {
-        public double MinimumCartAmount { get; set; }
         public int Rate { get; set; }
         public DiscountType DiscountType { get; set; }
         public double AmountOfDiscount { get; set; }
@@ -19,16 +20,28 @@
 
         private Coupon(double minimumCartAmount, int rateOfDiscount, DiscountType rate)
         {
-            MinimumCartAmount = minimumCartAmount;
+            MinimumAmount = minimumCartAmount;
             Rate = rateOfDiscount;
             DiscountType = rate;
         }
 
         private Coupon(double minimumCartAmount, double amountOfDiscount, DiscountType discountType)
         {
-            MinimumCartAmount = minimumCartAmount;
+            MinimumAmount = minimumCartAmount;
             AmountOfDiscount = amountOfDiscount;
             DiscountType = discountType;
+        }
+
+        public override double CalculateDiscountFor(Cart cart)
+        {
+            var cartTotalAmountAfterDiscounts = cart.TotalAmountAfterDiscounts;
+            if (cartTotalAmountAfterDiscounts >= MinimumAmount)
+            {
+                return 0;
+            }
+
+            // todo: implement
+            return 0;
         }
     }
 }
