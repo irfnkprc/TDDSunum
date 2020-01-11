@@ -1,6 +1,6 @@
 ﻿using ShoppingCart.Domain;
 
-namespace ShoppingCart.abstractions
+namespace ShoppingCart.Abstractions
 {
     public class AmountCoupon : BaseBenefit
     {

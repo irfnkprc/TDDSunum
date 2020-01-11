@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ShoppingCart.abstractions;
+using ShoppingCart.Abstractions;
 
 namespace ShoppingCart.Domain
 {

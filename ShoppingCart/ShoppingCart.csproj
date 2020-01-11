@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="abstractions\AmountCampaign.cs" />
-    <Compile Include="abstractions\AmountCoupon.cs" />
-    <Compile Include="abstractions\BaseBenefit.cs" />
-    <Compile Include="abstractions\RateCampaign.cs" />
-    <Compile Include="abstractions\RateCoupon.cs" />
+    <Compile Include="Abstractions\AmountCampaign.cs" />
+    <Compile Include="Abstractions\AmountCoupon.cs" />
+    <Compile Include="Abstractions\BaseBenefit.cs" />
+    <Compile Include="Abstractions\RateCampaign.cs" />
+    <Compile Include="Abstractions\RateCoupon.cs" />
     <Compile Include="Domain\Cart.cs" />
     <Compile Include="Domain\Category.cs" />
     <Compile Include="Domain\ChartItem.cs" />
